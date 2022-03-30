@@ -17,6 +17,8 @@ module Bundler
         end
 
         def error
+          return if valid?
+
           "Please downgrade '#{@gem_version.name}' version '#{@gem_version.number}: release date '#{@gem_version.release_date}' >= #{z_date}"
         end
       end
