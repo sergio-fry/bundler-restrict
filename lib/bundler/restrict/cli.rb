@@ -5,23 +5,30 @@ module Bundler
   module Restrict
     class CLI
       def self.start
+        new.call
+      end
+
+      def call
         errors = []
 
-
         BundlerGems.new.each do |gem|
-          print '.'
           [
             Checks::DateCheck
           ].map { |ch| ch.new(gem) }.each do |check|
-            errors << check.error unless check.valid?
+            unless check.valid?
+              print "\n"
+              puts check.error
+
+              errors << check.error 
+            end
           end
+
+          print '.'
         end
-        print "\n"
 
         if errors.empty?
           puts "OK"
         else
-          puts errors.join("\n")
           exit 1
         end
       end
