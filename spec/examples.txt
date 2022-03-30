@@ -1,0 +1,9 @@
+example_id                                               | status | run_time        |
+-------------------------------------------------------- | ------ | --------------- |
+./spec/bundler/restrict/bundler_gems_spec.rb[1:1]        | passed | 0.15205 seconds |
+./spec/bundler/restrict/bundler_gems_spec.rb[1:2]        | passed | 0.16008 seconds |
+./spec/bundler/restrict/checks/date_check_spec.rb[1:1:1] | passed | 0.00166 seconds |
+./spec/bundler/restrict/checks/date_check_spec.rb[1:2:1] | passed | 0.0004 seconds  |
+./spec/bundler/restrict/checks/date_check_spec.rb[1:2:2] | passed | 0.00054 seconds |
+./spec/bundler/restrict/gem_spec.rb[1:1]                 | passed | 0.11787 seconds |
+./spec/bundler/restrict_spec.rb[1:1]                     | passed | 0.00066 seconds |
