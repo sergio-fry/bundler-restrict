@@ -1,8 +1,11 @@
 # Bundler::Restrict
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bundler/restrict`. To experiment with that code, run `bin/console` for an interactive prompt.
+Check bundle gem list.
 
-TODO: Delete this and the text above, and describe your gem
+Available checks:
+
+    * DateCheck: check if gem release date < '2022-02-01'
+
 
 ## Installation
 
@@ -16,7 +19,17 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+Add to CI:
+
+```bash
+bundle-restrict
+```
+
+
+| ENV              |  Description           |  Default              |
+| ---------------- | ---------------------- | --------------------- |
+| BUNDLE_RESTRICT_Z_DATE | Max allowed release date | 2022-02-01 |
+| BUNDLE_RESTRICT_IGNORE_GEMS | List of gems to ignore checks | bundler-restrict |
 
 ## Development
 

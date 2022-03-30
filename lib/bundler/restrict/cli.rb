@@ -15,6 +15,8 @@ module Bundler
           [
             Checks::DateCheck
           ].map { |ch| ch.new(gem) }.each do |check|
+            next if ignore?(gem)
+
             unless check.valid?
               print "\n"
               puts check.error
@@ -27,10 +29,19 @@ module Bundler
         end
 
         if errors.empty?
+          print "\n"
           puts "OK"
         else
           exit 1
         end
+      end
+
+      def ignore?(gem)
+        ignored_gems.include? gem.name
+      end
+
+      def ignored_gems
+        ['bundler-restrict'] + ENV.fetch('BUNDLE_RESTRICT_IGNORE_GEMS', '').split(',')
       end
     end
   end
