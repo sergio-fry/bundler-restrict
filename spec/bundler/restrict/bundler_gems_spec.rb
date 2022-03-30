@@ -25,9 +25,10 @@ LIST
     RSpec.describe BundlerGems do
       subject(:gems) { described_class.new Test::FakeBundler.new }
 
-
-      it { expect(gems.first.name).to eq 'diff-lcs' }
-      it { expect(gems.first.number).to eq '1.5.0' }
+      context do
+        let(:gem) { gems.find { |el| el.name == 'rspec' } }
+        it { expect(gem.number).to eq '3.11.0' }
+      end
     end
   end
 end
