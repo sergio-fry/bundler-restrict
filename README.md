@@ -1,4 +1,4 @@
-# Bundler::Restrict
+# Bundler::Restrict [![Travis (.com) branch](https://img.shields.io/travis/com/sergio-fry/bundler-restrict/master)](https://travis-ci.com/github/sergio-fry/bundler-restrict) [![Gem](https://img.shields.io/gem/v/bundler-restrict)](https://rubygems.org/gems/bundler-restrict) [![Gem](https://img.shields.io/gem/dt/bundler-restrict)](https://rubygems.org/gems/bundler-restrict) [![Hits-of-Code](https://hitsofcode.com/github/sergio-fry/bundler-restrict)](https://hitsofcode.com/view/github/sergio-fry/bundler-restrict)
 
 Check bundle gem list.
 
