@@ -1,4 +1,4 @@
-require 'bundle/restrict/checks/date_check'
+require 'bundler/restrict/checks/date_check'
 
 module Bundler
   module Restrict
