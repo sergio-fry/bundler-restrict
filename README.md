@@ -6,6 +6,10 @@ Available checks:
 
     * DateCheck: check if gem release date < '2022-02-01'
 
+## Demo
+
+[![asciicast](https://asciinema.org/a/2evWbOHxYNxb4ZgwhzqDnJrB7.svg)](https://asciinema.org/a/2evWbOHxYNxb4ZgwhzqDnJrB7)
+
 
 ## Installation
 
