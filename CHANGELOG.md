@@ -1,5 +1,11 @@
 ## [Unreleased]
 
-## [0.1.0] - 2022-03-30
+## [0.1.2]
+
+- DateCheck
+- ignore some gems
+- github action to build gem
+
+## [0.1.0]
 
 - Initial release
