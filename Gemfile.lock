@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bundler-restrict (0.1.1)
+    bundler-restrict (0.1.2)
       gems
 
 GEM
